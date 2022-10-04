@@ -1,24 +1,3 @@
-//update rating to thank you//
-function thankYou() {
-  if (yourRating !== null) {
-    let ratingComponent = document.querySelector("#rating-component");
-    ratingComponent.innerHTML = `<img src="images/illustration-thank-you.svg" alt="submission illustration"/>
-     <h4>
-     You selected ${yourRating} out of 5
-   </h4>
-   <h2>Thank you!</h2>
-   <p>
-     We appreciate you taking the time to give a rating. If you ever need
-     more support, don’t hesitate to get in touch!
-   </p>`;
-  } else {
-    alert("Please select a rating.");
-  }
-}
-
-//handle submission//
-document.querySelector("#submit-btn").addEventListener("click", thankYou);
-
 //record rating//
 let yourRating = null;
 let rating1 = document.querySelector("#rating-1");
@@ -70,4 +49,15 @@ rating5.addEventListener("click", function rateFive() {
   rating2.classList.replace("active-rating", "non-active-rating");
   rating3.classList.replace("active-rating", "non-active-rating");
   rating4.classList.replace("active-rating", "non-active-rating");
+});
+
+//update rating to thank you//
+document.getElementById("submitBtn").addEventListener("click", () => {
+  if (yourRating !== null) {
+    document.getElementById("rating").hidden = true;
+    document.getElementById("thankYou").hidden = false;
+    document.getElementById("yourRating").innerHTML = yourRating;
+  } else {
+    alert(`Please select a rating.`);
+  }
 });
