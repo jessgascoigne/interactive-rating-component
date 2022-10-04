@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <section id="rating-component">
+    <!-- Rating state start -->
+    <div id="rating" class="container">
       <img src="images/icon-star.svg" alt="star" class="star-icon" />
       <h1>How did we do?</h1>
       <p>
@@ -28,9 +29,26 @@
         <button class="rating-btn non-active-rating" id="rating-5">5</button>
       </div>
       <div class="submit-container">
-        <button id="submit-btn">Submit</button>
+        <button id="submitBtn">Submit</button>
       </div>
-    </section>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div id="thankYou" class="container" hidden>
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="submission illustration"
+      />
+      <h4>You selected <span id="yourRating"></span> out of 5.</h4>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
     <script src="./src/app.js"></script>
   </body>
 </html>
