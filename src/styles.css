@@ -17,7 +17,7 @@ body {
   margin: 0;
 }
 
-#rating-component {
+.container {
   background: var(--dark-blue);
   border-radius: 30px;
   margin-top: 300px;
@@ -32,7 +32,7 @@ body {
   padding: 12px;
 }
 h1,
-h4 {
+h2 {
   color: var(--white);
 }
 p {
@@ -70,9 +70,9 @@ p {
 }
 
 .rating-btn:hover,
-#submit-btn:hover {
+#submitBtn:hover {
   cursor: pointer;
-  transition: all 250ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .submit-container {
@@ -80,7 +80,7 @@ p {
   justify-content: center;
 }
 
-#submit-btn {
+#submitBtn {
   background: var(--orange);
   border: none;
   border-radius: 70px;
@@ -96,4 +96,25 @@ p {
 #submit-btn:hover {
   background: var(--white);
   color: var(--orange);
+}
+
+#thankYou {
+  text-align: center;
+}
+
+#thankYou img {
+  margin-top: 15px;
+}
+#thankYou h4 {
+  background: var(--very-dark-blue);
+  border-radius: 40px;
+  color: var(--orange);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 35px 80px;
+  padding: 8px 0;
+}
+
+#thankYou p {
+  font-size: 16px;
 }
