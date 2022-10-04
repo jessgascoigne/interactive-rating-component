@@ -118,3 +118,18 @@ p {
 #thankYou p {
   font-size: 16px;
 }
+
+@media (max-width: 400px) {
+  .container {
+    margin-top: 100px;
+    max-width: 300px;
+  }
+
+  #thankYou h4 {
+    font-size: 15px;
+    margin: 20px 50px;
+  }
+  #thankYou p {
+    font-size: 15px;
+  }
+}
