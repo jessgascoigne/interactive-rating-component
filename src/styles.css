@@ -105,6 +105,21 @@ p {
   color: var(--orange);
 }
 
+footer {
+  color: var(--white);
+  margin-top: 30px;
+}
+
+footer a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 #thankYou {
   text-align: center;
 }
