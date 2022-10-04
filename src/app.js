@@ -1,10 +1,10 @@
 //record rating//
 let yourRating = null;
-let rating1 = document.querySelector("#rating-1");
-let rating2 = document.querySelector("#rating-2");
-let rating3 = document.querySelector("#rating-3");
-let rating4 = document.querySelector("#rating-4");
-let rating5 = document.querySelector("#rating-5");
+const rating1 = document.querySelector("#rating-1");
+const rating2 = document.querySelector("#rating-2");
+const rating3 = document.querySelector("#rating-3");
+const rating4 = document.querySelector("#rating-4");
+const rating5 = document.querySelector("#rating-5");
 
 rating1.addEventListener("click", function rateOne() {
   yourRating = "1";
